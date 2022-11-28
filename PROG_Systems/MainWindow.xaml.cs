@@ -21,6 +21,7 @@ namespace PROG_Systems
     
     public partial class MainWindow : Window
     {
+        
         Enviroment enviroment = new Enviroment();
 
         public MainWindow()
@@ -32,6 +33,7 @@ namespace PROG_Systems
         {
             enviroment.entities = Utility.LoadEntities("../../data/data.xml");
             TextNotes.Text = enviroment.GetAllEntityINFO();
+            EnvironmentName.DataContext = enviroment;
         }
 
         private void ChangeTime_Click(object sender, RoutedEventArgs e)

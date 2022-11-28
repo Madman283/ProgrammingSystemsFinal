@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Loaded="Grid_Loaded">
-        <TextBlock x:Name="TextNotes" HorizontalAlignment="Left" Margin="113,166,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="163" Width="335"/>
+        <TextBlock x:Name="TextNotes" HorizontalAlignment="Left" Margin="65,29,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="163" Width="335"/>
         <Button x:Name="ChangeTime" Content="Button" HorizontalAlignment="Left" Margin="679,29,0,0" VerticalAlignment="Top" Height="41" Width="77" Click="ChangeTime_Click"/>
-
+        <TextBlock  x:Name="EnvironmentName" HorizontalAlignment="Left" Margin="30,289,0,0" TextWrapping="Wrap" Text="{Binding Path=Name}" VerticalAlignment="Top" Height="68" Width="404" TextAlignment="Center" FontFamily="Lucida Bright" FontSize="24"/>
     </Grid>
 </Window>

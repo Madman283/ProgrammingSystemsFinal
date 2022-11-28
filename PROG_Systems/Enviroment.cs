@@ -10,7 +10,14 @@ namespace PROG_Systems
     {
         public List<Entity> entities = new List<Entity>();
 
+        private string name = "Bracken Bat Cave Ecosystem";
+
+        public string Name { get => name; set => name = value; }
+        
+
         public int day = 1;
+
+
         public string GetAllEntityINFO()
         {
             string output = "";
