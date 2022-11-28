@@ -35,7 +35,7 @@ namespace PROG_Systems
             day++;
             int numberofBats = EntityAmount("Bat");
             int numberofHawks = EntityAmount("Hawk");
-
+            int numberofBugs = EntityAmount("Corn earworm") + EntityAmount("Cotton Bollworm");
             Random random = new Random();
 
             if (numberofHawks > 0)
@@ -46,7 +46,7 @@ namespace PROG_Systems
                     ChangeEntityAmount("Bat",-1);
                 }
             }
-            int numberofBugs = EntityAmount("Corn earworm") + EntityAmount("Cotton Bollworm");
+            
             numberofBats = EntityAmount("Bat");
 
             int bugsNeeded = numberofBats * random.Next(500, 1000);
